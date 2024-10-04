@@ -52,22 +52,22 @@ Integrate a chatbot with a (Retrieval-Augmented Generation) RAG model that uses 
 
 ## Setup
 
-### conda environment 
+#### 1. conda environment 
 
 Create the required environment: `conda env create --file=conda.yml`
 
-### create a .env file with the following params
+#### 2. create a .env file with the following params
 
 openai_api_key = #your token here
 filepath=data/employment_act_markdown.txt
 deployment_name_model=gpt-35-turbo-0613
 deployment_name_text_embedding=text-embedding-ada-002
 
-#### run chatbot 
+#### 3a. run chatbot 
 
 To run the chatbot locally: `streamlit run src/hellobaya.py`
 
-#### run chatbot using Docker 
+#### 3b. run chatbot using Docker 
 
 i. Build docker: docker build -t hello-baya:v1 . 
 ii. Run docker: docker run --rm -it -p 8501:8501 hello-baya:v1
