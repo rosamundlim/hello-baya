@@ -69,5 +69,5 @@ To run the chatbot locally: `streamlit run src/hellobaya.py`
 
 #### 3b. run chatbot using Docker 
 
-i. Build docker: docker build -t hello-baya:v1 . 
+i. Build docker: docker build -t hello-baya:v1 . <br>
 ii. Run docker: docker run --rm -it -p 8501:8501 hello-baya:v1
